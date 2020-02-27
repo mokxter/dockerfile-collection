@@ -28,3 +28,7 @@ ENV PATH="${BUNDLE_BIN}:${PATH}"
 RUN gem install bundler
 
 WORKDIR /opt/app
+
+ENTRYPOINT ['./docker-entrypoint.rails.dev.sh']
+
+CMD ['bundle', 'exec', 'rails', 's', '-b', '0.0.0.0']
