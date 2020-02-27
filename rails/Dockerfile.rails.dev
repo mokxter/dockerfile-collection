@@ -25,6 +25,6 @@ ENV BUNDLE_JOBS=4 \
 
 ENV PATH="${BUNDLE_BIN}:${PATH}"
 
-RUN gem install bundler -v 2.0.1
+RUN gem install bundler
 
 WORKDIR /opt/app
