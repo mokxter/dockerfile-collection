@@ -18,7 +18,7 @@ RUN apt-get update -qq && \
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 ENV BUNDLE_JOBS=4 \
-  BUNDLE_RETRY=3 \
+  BUNDLE_RETRY=5 \
   BUNDLE_PATH=/bundle \
   BUNDLE_BIN=/bundle/bin \
   GEM_HOME=/bundle
