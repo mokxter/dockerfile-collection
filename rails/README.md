@@ -3,7 +3,7 @@
 ## Todo
 - [x] Minimum installation
 - [x] Development
-- [ ] Production
+- [x] Production
 
 ## Note
 We don't have a staging dockerfile because it should use the production version
