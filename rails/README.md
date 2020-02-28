@@ -2,9 +2,11 @@
 
 ## Todo
 - [x] Minimum installation
-- [ ] Development
+- [x] Development
 - [ ] Production
 
+## Note
+We don't have a staging dockerfile because it should use the production version
 
 # Minimum installation
 
