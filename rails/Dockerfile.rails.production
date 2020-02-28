@@ -23,7 +23,7 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 COPY Gemfile Gemfile.lock ./
 
-RUN bunlde install --with production --without development test
+RUN bundle install --with production --without staging development test
 
 RUN ./bin/rails assets:clobber && ./bin/rails assetse:precompile
 
