@@ -25,7 +25,10 @@ COPY Gemfile Gemfile.lock ./
 
 RUN bundle install --with production --without staging development test
 
-RUN ./bin/rails assets:clobber && ./bin/rails assetse:precompile
+# TODO 
+# ADD NODE ENV AND NODE SETUP
+
+RUN ./bin/rails assets:clean && ./bin/rails assetse:precompile
 
 COPY . .
 
