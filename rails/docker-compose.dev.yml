@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  app:
+    build:
+      context: .
+      args:
+        - GROUP_ID=${UID}
+        - USER_ID=${UID}
+    volumes:
+      - ../:/opt/app
+
+
